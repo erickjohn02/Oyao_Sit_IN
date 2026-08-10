@@ -1,0 +1,163 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background with an image */
+body {
+    background-image: url('./images/UCMain.jpg'); /* Replace with your actual background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Registration container */
+.register-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Ensure both images have the same size */
+.logo-container img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin: 0 10px; /* Space between images */
+}
+
+/* Heading style */
+h2 {
+    font-size: 1.7rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form group styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input and Select field styling */
+input, select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+/* Focus state for input and select fields */
+input:focus, select:focus {
+    border: 1px solid #007bff;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: slideUp 0.5s ease-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Back button styling */
+.back-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+/* Animation for form and button */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 500px) {
+    .register-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    input, select {
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        padding: 12px;
+    }
+}
